@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>String 3</title>
+</head>
+
+<body>
+    <pre>
+        <code>
+            /* Q> Write a program in java to print the following pattern:
+                XUE 
+                XUE HUA 
+                XUE HUA PIAO 
+                XUE HUA PIAO PIAO 
+                XUE HUA PIAO PIAO BEI 
+                XUE HUA PIAO PIAO BEI FENG 
+                XUE HUA PIAO PIAO BEI FENG XIAO 
+                XUE HUA PIAO PIAO BEI FENG XIAO XIAO
+            */
+            
+            public class String3 {
+                public static void main(String[] args) {
+                    int iterator = 0, k = 0;
+                    String s = "XUE HUA PIAO PIAO BEI FENG XIAO XIAO";
+                    for (int i = 0 ; i < s.length(); i++) {
+                        if (s.charAt(i) == 32 || i + 1 == s.length()) {
+                            iterator = i;
+                            System.out.println(s.substring(k, iterator + 1));
+                        }
+                    }
+                }
+            }
+        </code>
+    </pre>
+    <br>
+    <a href="../index.html">Go Back</a>
+</body>
+
+</html>

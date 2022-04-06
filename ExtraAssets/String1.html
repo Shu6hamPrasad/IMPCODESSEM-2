@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>String 1</title>
+</head>
+
+<body>
+    <pre>
+            <code>
+            /* Q> Write a program in java to print the following result:
+                XUE
+                HUA
+                PIAO
+                PIAO
+                BEI
+                FENG
+                XIAO
+                XIAO
+            */
+            
+            public class String1 {
+                public static void main(String[] args) {
+                    String s = "XUE HUA PIAO PIAO BEI FENG XIAO XIAO";
+                    int iterator = 0;
+                    for (int i = 0; i < s.length(); i++) {
+                        if (s.charAt(i) == 32 || i + 1 == s.length()) {
+                            System.out.println(s.substring(iterator, i + 1));
+                            iterator = i + 1;
+                        }
+                    }
+                }
+            }
+        </code>
+    </pre>
+    <br>
+    <a href="../index.html">Go Back</a>
+</body>
+
+</html>

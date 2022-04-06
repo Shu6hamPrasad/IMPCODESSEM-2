@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>String 6</title>
+</head>
+
+<body>
+    <pre>
+        <code>
+        /* Q> Write a program to remove the vowels and print the sentence.
+            Example:
+            Input: XUE HUA PIAO PIAO BEI FENG XIAO XIAO
+            Output: X H P P B FNG X X
+        */
+        
+        public class String7 {
+            public static void main(String[] args) {
+                String s = "XUE HUA PIAO PIAO BEI FENG XIAO XIAO";
+                String edit = "";
+                for (int i = 0; i < s.length(); i++) {
+                    char c = Character.toUpperCase(s.charAt(i));
+                    switch(c) {
+                        case('A'):
+                        case('E'):
+                        case('I'):
+                        case('O'):
+                        case('U'):
+                        continue;
+                    }
+                    edit += c;
+                }
+                System.out.println(edit);
+            }
+        }
+    </code>
+</pre>
+    <br>
+    <a href="../index.html">Go Back</a>
+</body>
+
+</html>
